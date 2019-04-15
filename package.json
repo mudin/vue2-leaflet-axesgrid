@@ -1,0 +1,36 @@
+{
+  "name": "vue2-leaflet-axesgrid",
+  "version": "1.0.6",
+  "description": "A Leaflet.AxesGrid plugin for the vue2-leaflet package",
+  "main": "./Vue2LeafletAxesGrid.vue",
+  "scripts": {
+    "build": "poi build --library",
+    "example": "poi example/index.js"
+  },
+  "poi": {
+    "entry": "./Vue2LeafletAxesGrid.vue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mudin/vue2-leaflet-axesgrid.git"
+  },
+  "keywords": [
+    "vue2",
+    "leaflet",
+    "axesgrid"
+  ],
+  "author": "imudin07 <imudin07@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mudin/vue2-leaflet-axesgrid/issues"
+  },
+  "homepage": "https://github.com/mudin/vue2-leaflet-axesgrid#readme",
+  "devDependencies": {
+    "poi": "^9.3.10"
+  },
+  "dependencies": {
+    "leaflet": "^1.3.4",
+    "leaflet.axesgrid": "0.0.2",
+    "vue2-leaflet": "^2.0.2"
+  }
+}
