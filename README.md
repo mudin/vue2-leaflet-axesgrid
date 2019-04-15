@@ -1,10 +1,10 @@
-# vue2-leaflet-vectorgrid
+# vue2-leaflet-axesgrid
 
-This is a [VectorGrid](https://github.com/Leaflet/Leaflet.VectorGrid) plugin extension for the [vue2-leaflet](https://github.com/KoRiGaN/Vue2Leaflet) package. Currently only the VectorGrid.protobuf layer is implemented.
+This is a [AxesGrid](https://github.com/Leaflet/Leaflet.AxesGrid) plugin extension for the [vue2-leaflet](https://github.com/KoRiGaN/Vue2Leaflet) package. Currently only the AxesGrid.protobuf layer is implemented.
 
 ## Install
 
-    npm install vue2-leaflet-vectorgrid
+    npm install vue2-leaflet-axesgrid
 
 ## Quickstart
 
@@ -13,8 +13,9 @@ For a complete example, have a look at the demo code in the single-file componen
 ### On &lt;template&gt; add something like this
 
 ```html
-<v-map :zoom=10 :center="[-34.9205, -57.953646]">
-  <v-protobuf url="https://example.com/my/favorite/endpoint/{z}/{y}/{x}.pbf" :options="options"></v-protobuf>
+<v-map :crs="crs">
+  <v-axesgrid :options="opts"/>
+  <v-image-overlay :url="imageUrl" :bounds="bounds"/>
 </v-map>
 ```
 
@@ -22,18 +23,18 @@ For a complete example, have a look at the demo code in the single-file componen
 
 ```javascript
 import Vue2Leaflet from 'vue2-leaflet'
-import Vue2LeafletVectorGridProtobuf from 'vue2-leaflet-vectorgrid'
+import Vue2LeafletAxesGrid from 'vue2-leaflet-axesgrid'
 
 export default {
   components: {
     'v-map': Vue2Leaflet.Map,
-    'v-protobuf': Vue2LeafletVectorGridProtobuf
+    'v-axesgrid': Vue2LeafletAxesGrid
   },
   data () {
     return {
       options: {
-      	vectorTileLayerStyles: { ... },
-         ...  // More VectorGrid options.
+      	opt: { ... },
+         ...  // More AxesGrid and Map options.
       }
     }
   }
@@ -41,8 +42,8 @@ export default {
 ```
 ## Demo
 
-    git clone git@github.com:tesselo/vue2-leaflet-vectorgrid.git
-    cd vue2-leaflet-vectorgrid
+    git clone git@github.com:tesselo/vue2-leaflet-axesgrid.git
+    cd vue2-leaflet-axesgrid
 
     npm install
     npm run example
