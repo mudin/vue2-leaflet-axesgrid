@@ -1,6 +1,6 @@
 # vue2-leaflet-axesgrid
 
-This is a [AxesGrid](https://github.com/Leaflet/Leaflet.AxesGrid) plugin extension for the [vue2-leaflet](https://github.com/KoRiGaN/Vue2Leaflet) package. Currently only the AxesGrid.protobuf layer is implemented.
+This is a [AxesGrid](https://github.com/mudin/Leaflet.AxesGrid) plugin extension for the [vue2-leaflet](https://github.com/KoRiGaN/Vue2Leaflet) package.
 
 ## Install
 
