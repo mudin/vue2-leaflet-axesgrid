@@ -16,7 +16,6 @@
 </template>
 
 <script>
-import L from 'leaflet'
 import {LMap, LImageOverlay} from 'vue2-leaflet'
 import Vue2LeafletAxesGrid from '../Vue2LeafletAxesGrid'
 
